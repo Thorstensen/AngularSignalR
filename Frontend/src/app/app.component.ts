@@ -28,7 +28,10 @@ export class AppComponent implements OnInit {
       .catch(err => console.log('Error while establishing connection :('));
 
     this._hubConnection.on('BroadcastMessage', (type: string, payload: string) => {
-      this.msgs.push({ severity: type, summary: payload });
+      if(this.msgs.length > 5)
+        this.msgs = [];
+      
+        this.msgs.push({ severity: type, summary: payload });
     });
   }
 }
