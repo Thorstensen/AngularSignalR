@@ -14,7 +14,6 @@ export class AppComponent implements OnInit {
   msgs: Message[] = [];
 
   constructor() { 
-    let y = 1;
   }
 
   ngOnInit(): void {
@@ -24,7 +23,8 @@ export class AppComponent implements OnInit {
     this._hubConnection =_hubConnectionBuilder.build();
     this._hubConnection
       .start()
-      .then(() => console.log('Connection started!'))
+      .then(() => conso
+      le.log('Connection started!'))
       .catch(err => console.log('Error while establishing connection :('));
 
     this._hubConnection.on('BroadcastMessage', (type: string, payload: string) => {
