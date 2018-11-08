@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     let _hubConnectionBuilder = new HubConnectionBuilder();
-    _hubConnectionBuilder.withUrl('http://localhost:51259/notifications');
+    _hubConnectionBuilder.withUrl('http://localhost:51260/notifications');
 
     this._hubConnection =_hubConnectionBuilder.build();
     this._hubConnection
