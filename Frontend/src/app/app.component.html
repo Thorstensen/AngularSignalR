@@ -8,4 +8,14 @@
   </div>
 </div>
 
-<p-growl [(value)]="msgs"></p-growl>
+<div class="submit-div">
+    <div class="field">
+        <mat-form-field>
+            <input matInput placeholder="Enter SignalR Message" [(ngModel)]="_message">
+        </mat-form-field>  
+    </div>
+    <div class="submit" >  
+        <button (click)="onSubmitMessage()" mat-raised-button>Post!</button>
+    </div>
+</div>
+
