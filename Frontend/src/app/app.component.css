@@ -1,6 +1,6 @@
 .layout-topbar {
   height: 55px;
-  background-color: black;
+  background-color:#6200EE;
   padding: 16px 42px 16px 24px;
   width: 100%;
   -moz-transition: width 0.3s;
@@ -17,4 +17,27 @@
 
 .main-content{
   margin-top: 15px;
+}
+
+.submit-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;        /* center items horizontally, in this case */
+  height: 300px;
+}
+
+.mat-button, .mat-raised-button{
+  background-color: #6200EE;
+  color:white;
+  outline:none;
+} 
+
+.snackbar {
+  background-color: #6200EE;
 }
